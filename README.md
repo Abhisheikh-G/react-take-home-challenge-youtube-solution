@@ -1,3 +1,7 @@
+### Solution
+
+I hope you enjoyed the video and that this helps you on your journey on becoming a developer.
+
 ### Intro
 
 This exercise is to test your understanding of JavaScript/TypeScript and the React framework in a real world setting. The goal is to create a mock-up of a generic marketplace page using an API.
