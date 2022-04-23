@@ -5,14 +5,7 @@ import Header from "components/Header";
 import React from "react";
 import { ItemCard } from "./ItemCard";
 import ItemCardSkeleton from "./ItemCardSkeleton";
-
-const cols = {
-  sm: 1,
-  md: 2,
-  lg: 3,
-  xl: 4,
-  "2xl": 5,
-};
+import { numCols } from "./constants";
 
 export const ItemList: React.FC = () => {
   const { data: items, isLoading, isError, error } = useItems();
@@ -22,7 +15,7 @@ export const ItemList: React.FC = () => {
     <>
       <Header />
       <SimpleGrid
-        columns={cols}
+        columns={numCols}
         spacingY="20px"
         alignItems="center"
         justifyItems="center"

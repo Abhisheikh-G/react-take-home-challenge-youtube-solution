@@ -1,21 +1,14 @@
 import { Skeleton, SimpleGrid } from "@chakra-ui/react";
 import Header from "components/Header";
 import React from "react";
-
-const cols = {
-  sm: 1,
-  md: 2,
-  lg: 3,
-  xl: 4,
-  "2xl": 5,
-};
+import { numCols } from "./constants";
 
 const ItemCardSkeleton = () => {
   return (
     <>
       <Header />
       <SimpleGrid
-        columns={cols}
+        columns={numCols}
         spacing="20px"
         alignItems="center"
         justifyItems="center"
