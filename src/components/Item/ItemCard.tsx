@@ -15,7 +15,7 @@ export const ItemCard: React.FC<{ item: IItem }> = ({ item }) => {
           backgroundImage: `url(${item.imageUrls[0].url})`,
           "&:hover": {
             "> div": {
-              opacity: 0.9,
+              opacity: 0.95,
               transition: "all 0.2s",
             },
           },

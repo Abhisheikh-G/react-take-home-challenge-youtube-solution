@@ -21,9 +21,7 @@ const ItemCardSkeleton = () => {
         justifyItems="center"
         mb={8}
       >
-        {Array.from([
-          0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20,
-        ]).map((val) => (
+        {Array.from({ length: 20 }, (v, i) => i).map((val) => (
           <Skeleton h={200} w={215} key={val} borderRadius={10}>
             ItemCardSkeleton
           </Skeleton>
