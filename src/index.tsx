@@ -1,4 +1,4 @@
 import ReactDOM from "react-dom";
-import { ItemList } from "./components";
+import App from "./App";
 
-ReactDOM.render(<ItemList />, document.getElementById("root"));
+ReactDOM.render(<App />, document.getElementById("root"));

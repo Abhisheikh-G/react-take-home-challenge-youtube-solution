@@ -16,3 +16,7 @@ export interface IVariant {
   description: string;
   price: number;
 }
+
+interface IErrorMessage {
+  error: string;
+}
