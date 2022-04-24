@@ -2,16 +2,15 @@ import { VStack, Box, Button, Text } from "@chakra-ui/react";
 import { IItem } from "@types";
 import React from "react";
 import { useHistory } from "react-router-dom";
+import { cardDimensions } from "./constants";
 
 export const ItemCard: React.FC<{ item: IItem }> = ({ item }) => {
   const history = useHistory();
   return (
     <VStack>
       <Box
-        h={230}
-        w={240}
-        borderRadius={10}
         sx={{
+          ...cardDimensions,
           backgroundImage: `url(${item.imageUrls[0].url})`,
           "&:hover": {
             "> div": {
@@ -28,7 +27,8 @@ export const ItemCard: React.FC<{ item: IItem }> = ({ item }) => {
           }}
           p={4}
           h="100%"
-          borderRadius={10}
+          w="100%"
+          borderRadius={7}
         >
           <Box h={165}>
             <Text fontSize="large" fontWeight="medium">

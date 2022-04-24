@@ -1,7 +1,7 @@
 import { Skeleton, SimpleGrid } from "@chakra-ui/react";
 import Header from "components/Header";
 import React from "react";
-import { numCols } from "./constants";
+import { numCols, cardDimensions } from "./constants";
 
 const ItemCardSkeleton = () => {
   return (
@@ -15,7 +15,7 @@ const ItemCardSkeleton = () => {
         mb={8}
       >
         {Array.from({ length: 20 }, (v, i) => i).map((val) => (
-          <Skeleton h={200} w={215} key={val} borderRadius={10}>
+          <Skeleton sx={{ ...cardDimensions }} key={val}>
             ItemCardSkeleton
           </Skeleton>
         ))}
